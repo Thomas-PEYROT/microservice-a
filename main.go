@@ -18,7 +18,6 @@ func main() {
 	// Création du routeur Gin
 	router := gin.Default()
 	router.GET("/", func(c *gin.Context) {
-		log.Println("Called here !")
 		c.String(http.StatusOK, "Hello microservice A !")
 	})
 
